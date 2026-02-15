@@ -3,88 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anya Nursery | Premium Black Pepper Plants</title>
+
+  <!-- SEO -->
+  <title>Anya Nursery | Black Pepper Plants | Pepper Nursery Karnataka</title>
+  <meta name="description" content="Anya Nursery offers premium black pepper plants with high yield and disease resistance. Order directly on WhatsApp.">
+  <meta name="keywords" content="Black Pepper Nursery, Pepper Plants, Pepper Farming, Karnataka Nursery">
+
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-      <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919632666352" 
-       class="whatsapp-float" 
-       target="_blank" 
-       aria-label="Chat on WhatsApp">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-           alt="WhatsApp" />
-    </a>
-  
+
 <body>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919632666352" class="whatsapp-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
 
 <!-- HEADER -->
 <header class="navbar">
   <div class="logo">🌱 Anya Nursery</div>
   <nav>
-    <a href="#varieties">Varieties</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <a href="#varieties" data-en="Varieties" data-kn="ವೈವಿಧ್ಯಗಳು">Varieties</a>
+    <a href="#about" data-en="About" data-kn="ನಮ್ಮ ಬಗ್ಗೆ">About</a>
+    <a href="#contact" data-en="Contact" data-kn="ಸಂಪರ್ಕ">Contact</a>
+    <button class="lang-btn" onclick="toggleLanguage()">ಕನ್ನಡ</button>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <h1>Premium Black Pepper Plants</h1>
-    <p>High-yield • Disease resistant • Trusted nursery</p>
+    <h1 data-en="Premium Black Pepper Plants"
+        data-kn="ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಕಪ್ಪು ಮೆಣಸು ಸಸಿಗಳು">
+      Premium Black Pepper Plants
+    </h1>
+    <p data-en="High-yield • Disease resistant • Trusted nursery"
+       data-kn="ಹೆಚ್ಚು ಉತ್ಪಾದನೆ • ರೋಗ ನಿರೋಧಕ • ವಿಶ್ವಾಸಾರ್ಹ ನರ್ಸರಿ">
+      High-yield • Disease resistant • Trusted nursery
+    </p>
     <a href="https://wa.me/919632666352" target="_blank" class="cta">
-      Enquire on WhatsApp
+      WhatsApp Enquiry
     </a>
   </div>
 </section>
 
 <!-- VARIETIES -->
 <section id="varieties" class="section">
-  <h2>🌶 Black Pepper Varieties</h2>
+  <h2 data-en="🌶 Black Pepper Varieties"
+      data-kn="🌶 ಕಪ್ಪು ಮೆಣಸು ವೈವಿಧ್ಯಗಳು">
+    🌶 Black Pepper Varieties
+  </h2>
 
   <div class="cards">
 
+    <!-- CARD -->
     <div class="card">
       <img src="images/pepper1.jpg" alt="Panniyur-1">
       <h3>Panniyur-1</h3>
-      <p>High yielding, bold berries, suitable for commercial farming.</p>
-      <a class="btn" href="https://wa.me/919632666352" target="_blank">Order Now</a>
+      <p data-en="High yielding commercial variety"
+         data-kn="ಹೆಚ್ಚು ಉತ್ಪಾದನೆಯ ವಾಣಿಜ್ಯ ತಳಿ">
+        High yielding commercial variety
+      </p>
+      <a class="btn" onclick="orderNow('Panniyur-1')">Order on WhatsApp</a>
     </div>
 
     <div class="card">
       <img src="images/pepper2.jpg" alt="Karimunda">
       <h3>Karimunda</h3>
-      <p>Traditional variety with strong aroma and premium quality.</p>
-      <a class="btn" href="https://wa.me/919632666352" target="_blank">Order Now</a>
+      <p data-en="Traditional variety with strong aroma"
+         data-kn="ಪಾರಂಪರಿಕ ಮತ್ತು ಘಮಣಯುಕ್ತ ತಳಿ">
+        Traditional variety with strong aroma
+      </p>
+      <a class="btn" onclick="orderNow('Karimunda')">Order on WhatsApp</a>
     </div>
 
     <div class="card">
       <img src="images/pepper3.jpg" alt="Sreekara">
       <h3>Sreekara</h3>
-      <p>Early bearing variety with consistent yield.</p>
-      <a class="btn" href="https://wa.me/919632666352" target="_blank">Order Now</a>
-    </div>
-
-    <div class="card">
-      <img src="images/pepper4.jpg" alt="Pournami">
-      <h3>Pournami</h3>
-      <p>Disease tolerant, ideal for humid regions.</p>
-      <a class="btn" href="https://wa.me/919632666352" target="_blank">Order Now</a>
-    </div>
-
-    <div class="card">
-      <img src="images/pepper5.jpg" alt="Subhakara">
-      <h3>Subhakara</h3>
-      <p>High dry recovery with excellent berry size.</p>
-      <a class="btn" href="https://wa.me/919632666352" target="_blank">Order Now</a>
-    </div>
-
-    <div class="card">
-      <img src="images/pepper6.jpg" alt="IISR Shakti">
-      <h3>IISR Shakti</h3>
-      <p>Modern hybrid with superior yield and strength.</p>
-      <a class="btn" href="https://wa.me/919632666352" target="_blank">Order Now</a>
+      <p data-en="Early bearing high yield variety"
+         data-kn="ತ್ವರಿತ ಫಲ ನೀಡುವ ತಳಿ">
+        Early bearing high yield variety
+      </p>
+      <a class="btn" onclick="orderNow('Sreekara')">Order on WhatsApp</a>
     </div>
 
   </div>
@@ -92,25 +93,45 @@
 
 <!-- ABOUT -->
 <section id="about" class="section about">
-  <h2>🌿 About Anya Nursery</h2>
-  <p>
-    Anya Nursery specializes in producing **healthy, high-yield black pepper plants**
-    using scientific nursery practices. Our plants are grown with care to ensure
-    strong root systems, early bearing, and long-term productivity.
+  <h2 data-en="🌿 About Anya Nursery"
+      data-kn="🌿 ಅನ್ಯಾ ನರ್ಸರಿ ಬಗ್ಗೆ">
+    🌿 About Anya Nursery
+  </h2>
+  <p data-en="We grow healthy pepper plants using scientific nursery methods."
+     data-kn="ನಾವು ವೈಜ್ಞಾನಿಕ ವಿಧಾನದಲ್ಲಿ ಆರೋಗ್ಯಕರ ಮೆಣಸು ಸಸಿಗಳನ್ನು ಬೆಳೆಸುತ್ತೇವೆ.">
+    We grow healthy pepper plants using scientific nursery methods.
   </p>
+</section>
+
+<!-- LOCATION -->
+<section class="section">
+  <h2 data-en="📍 Our Location"
+      data-kn="📍 ನಮ್ಮ ಸ್ಥಳ">
+    📍 Our Location
+  </h2>
+
+  <div class="map-box">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0!2d0!3d0"
+      width="100%"
+      height="350"
+      style="border:0;"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section contact">
-  <h2>📞 Contact & Orders</h2>
-  <p>For bulk orders, farming guidance & availability</p>
+  <h2>📞 Contact</h2>
   <a href="https://wa.me/919632666352" target="_blank" class="cta">
     Chat on WhatsApp
   </a>
 </section>
 
 <footer>
-  © 2026 Anya Nursery • Premium Black Pepper Plants
+  © 2026 Anya Nursery
 </footer>
 
 <script src="script.js"></script>
