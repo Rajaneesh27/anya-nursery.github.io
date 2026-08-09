@@ -1,132 +1,323 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="kn" data-lang="kn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#063b27">
+<title>Anya Nursery | ಗುಣಮಟ್ಟದ ನರ್ಸರಿ ಗಿಡಗಳು</title>
+<meta name="description" content="Anya Nursery — ಧೂಪ (ಹಾಲುಮಡ್ಡಿ), ಎಲ್ಲಾ ತಳಿಯ ಅಡಿಕೆ ಮತ್ತು IISR ಚಂದ್ರ ತಳಿಯ ಕಾಳುಮೆಣಸು ಗಿಡಗಳು. WhatsApp ವಿಚಾರಣೆ ಮತ್ತು ಹೋಂ ಡೆಲಿವರಿ.">
+<link rel="icon" href="img/anya-leaf.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+ --deep:#063b27;--deep2:#0a4d31;--green:#2f8c3c;--lime:#a8d63b;--cream:#fbfaf4;
+ --paper:#fffefb;--ink:#183126;--muted:#66756d;--line:#e3e8df;--gold:#c98718;
+ --wa:#25d366;--shadow:0 18px 50px rgba(10,65,40,.11);--r:26px;--max:1180px
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Noto Sans Kannada",sans-serif;padding-bottom:0}
+body.kn{font-family:"Noto Sans Kannada",Inter,sans-serif}
+a{text-decoration:none;color:inherit}img{display:block;width:100%}h1,h2,h3,p{overflow-wrap:break-word}button,a{font-family:inherit}
+.lang-en{display:none!important}
+[data-lang="en"] .lang-kn{display:none!important}
+[data-lang="en"] .lang-en{display:inline!important}
+[data-lang="en"] h1.lang-en,
+[data-lang="en"] h2.lang-en,
+[data-lang="en"] h3.lang-en,
+[data-lang="en"] p.lang-en,
+[data-lang="en"] div.lang-en{display:block!important}
+[data-lang="en"] strong.lang-en,
+[data-lang="en"] small.lang-en{display:block!important}
+.wrap{width:min(calc(100% - 32px),var(--max));margin:auto}
 
-  <!-- SEO -->
-  <title>Anya Nursery | Black Pepper Plants | Pepper Nursery Karnataka</title>
-  <meta name="description" content="Anya Nursery offers premium black pepper plants with high yield and disease resistance. Order directly on WhatsApp.">
-  <meta name="keywords" content="Black Pepper Nursery, Pepper Plants, Pepper Farming, Karnataka Nursery">
+/* slim promise bar */
+.topbar{background:var(--deep);color:#e8f5e9;text-align:center;font-size:12px;font-weight:600;letter-spacing:.01em;padding:8px 10px}
+.topbar span{opacity:.95}
 
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+/* header */
+.header{background:rgba(255,254,251,.95);backdrop-filter:blur(18px);position:sticky;top:0;z-index:50;border-bottom:1px solid #edf0e9}
+.header-in{height:82px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0;flex:1}.brand>span{display:block;min-width:0}.brand-name,.brand-tag{display:block}.brand-logo{width:54px;height:54px;border-radius:17px;background:#edf7ed;padding:4px;box-shadow:inset 0 0 0 1px #dcebdc}
+.brand-name{font-size:23px;font-weight:800;letter-spacing:-.04em;color:#16251e;line-height:1}.brand-tag{font-size:11px;color:#78847d;margin-top:6px;font-weight:600}
+.header-piperine{width:62px;height:52px;flex:0 0 62px;margin-left:8px;margin-right:2px;padding:4px;background:#050505;border:1px solid #1c2a22;border-radius:15px;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 5px 14px rgba(0,0,0,.14)}
+.header-piperine img{width:54px;height:44px;object-fit:contain;display:block}
+.nav{display:flex;align-items:center;gap:10px}.navlinks{display:flex;gap:24px;margin-right:6px;font-size:12px;font-weight:700;color:#58665e}.navlinks a:hover{color:var(--deep)}
+.lang-switch{display:flex;align-items:center;background:#eef3ee;border-radius:999px;padding:4px}.lang-switch button{border:0;background:none;padding:11px 16px;border-radius:999px;font:700 12px inherit;color:#5f6d65;cursor:pointer}.lang-switch button.active{background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.08);color:var(--deep)}
+.menu{display:none;border:0;background:#eef3ee;width:46px;height:46px;border-radius:15px;font-size:21px;color:var(--deep)}
+.header-wa{background:var(--deep);color:#fff;padding:12px 16px;border-radius:13px;font-size:11px;font-weight:800}
+
+/* hero */
+.hero{padding:18px 0 0;background:var(--cream)}
+.hero-card{min-height:610px;border-radius:30px;overflow:hidden;position:relative;background:#173e29;display:flex;align-items:center}
+.hero-card:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,38,23,.90) 0%,rgba(3,38,23,.78) 40%,rgba(3,38,23,.28) 72%,rgba(3,38,23,.12) 100%),linear-gradient(0deg,rgba(3,38,23,.30),transparent 50%);z-index:1}
+.hero-image{position:absolute;inset:0;background:url("img/pepper-clusters.webp") center 45%/cover no-repeat;transform:scale(1.01)}
+.hero-content{position:relative;z-index:2;color:#fff;width:min(690px,72%);padding:65px 0 62px 58px}
+.eyebrow{display:flex;align-items:center;gap:8px;color:#b9e68b;text-transform:uppercase;letter-spacing:.14em;font-size:10px;font-weight:800}.eyebrow i{width:7px;height:7px;background:var(--lime);border-radius:50%;display:block}
+.hero h1{font-size:clamp(43px,5.5vw,72px);line-height:1.08;letter-spacing:-.055em;margin:17px 0 18px;font-weight:800}
+.hero h1 em{font-style:normal;color:#d8ef3e}
+.hero-lead{font-size:17px;line-height:1.8;color:#f0f6f0;max-width:590px;margin:0 0 24px}
+.quick-points{display:grid;grid-template-columns:repeat(4,1fr);gap:0;max-width:690px;border:1px solid rgba(255,255,255,.20);background:rgba(6,48,29,.38);backdrop-filter:blur(12px);border-radius:18px;padding:13px 8px;margin-bottom:14px}
+.quick{display:flex;align-items:center;justify-content:center;gap:7px;color:#eff8ee;font-size:10px;font-weight:700;text-align:center;padding:3px 8px;border-right:1px solid rgba(255,255,255,.18)}
+.quick:last-child{border:0}.quick b{font-size:17px;color:#b6e73d}
+.hero-actions{display:grid;grid-template-columns:1.25fr .85fr;gap:10px;max-width:690px}.btn{min-height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;padding:0 17px;font-size:12px;font-weight:800;border:0}.btn-wa{background:var(--wa);color:#062f1c}.btn-call{background:#fff;color:var(--deep)}
+.hero-note{display:flex;gap:25px;margin-top:18px;font-size:10px;color:#d9e7dc}.hero-note span{display:flex;gap:7px;align-items:center}.hero-note b{color:#b8e73d}
+
+/* plants */
+.section{padding:78px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 35px}.section-head h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.05em;line-height:1.13;margin:10px 0 12px}.section-head h2 em{font-style:normal;color:var(--green)}.section-head p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+.plants{background:#fff}.plant-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.plant{border:1px solid var(--line);border-radius:25px;overflow:hidden;background:#fff;box-shadow:0 8px 26px rgba(8,55,33,.05);transition:.28s}.plant:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.plant-image{height:250px;position:relative;overflow:hidden}.plant-image img{height:100%;object-fit:cover;transition:.45s}.plant:hover .plant-image img{transform:scale(1.05)}
+.plant-slideshow .plant-slides{position:absolute;inset:0}.plant-slides img{position:absolute;inset:0;opacity:0;visibility:hidden;transform:scale(1.02);transition:opacity .45s ease,transform .6s ease}.plant-slides img.is-active{opacity:1;visibility:visible;transform:scale(1)}.slide-btn{position:absolute;top:50%;z-index:3;transform:translateY(-50%);width:34px;height:34px;border:1px solid rgba(255,255,255,.55);border-radius:50%;background:rgba(0,38,24,.42);backdrop-filter:blur(8px);color:#fff;font-size:25px;line-height:1;display:grid;place-items:center;cursor:pointer;opacity:.92}.slide-prev{left:10px}.slide-next{right:10px}.slide-dots{position:absolute;z-index:3;left:50%;bottom:10px;transform:translateX(-50%);display:flex;gap:5px;padding:5px 7px;border-radius:999px;background:rgba(0,38,24,.38);backdrop-filter:blur(8px)}.slide-dots button{width:6px;height:6px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.55);cursor:pointer}.slide-dots button.is-active{background:#d9ef3d;transform:scale(1.25)}.slide-btn:focus-visible,.slide-dots button:focus-visible{outline:2px solid #d9ef3d;outline-offset:2px}
+.plant-badge{position:absolute;left:14px;top:14px;padding:7px 10px;background:rgba(255,255,255,.94);border-radius:999px;font-size:9px;font-weight:800;color:var(--deep);letter-spacing:.08em}
+.plant-icon{position:absolute;bottom:-20px;left:17px;width:48px;height:48px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:22px;box-shadow:0 5px 15px rgba(0,0,0,.12)}
+.plant-body{padding:28px 19px 18px}.plant-kicker{font-size:9px;color:var(--green);font-weight:800;letter-spacing:.1em;text-transform:uppercase}.plant h3{font-size:19px;line-height:1.35;margin:8px 0}.plant p{font-size:12px;line-height:1.7;color:var(--muted);min-height:42px;margin:0 0 16px}.plant-wa{display:flex;align-items:center;justify-content:center;gap:7px;background:var(--deep);color:#fff;border-radius:12px;min-height:42px;font-size:11px;font-weight:800}.plant-wa:hover{background:var(--green)}
+.plant-details{margin:14px 0 12px;border-top:1px solid #edf1e9;padding-top:10px}
+.plant-details summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--deep);font-size:11px;font-weight:800;padding:6px 0;user-select:none}
+.plant-details summary::-webkit-details-marker{display:none}
+.plant-details summary:after{content:"+";width:24px;height:24px;border-radius:50%;background:#eef5e9;display:grid;place-items:center;font-size:16px;line-height:1;flex:none}
+.plant-details[open] summary:after{content:"−"}
+.plant-detail-body{padding:8px 0 2px}
+.detail-intro{font-size:11px;line-height:1.65;color:var(--muted);margin:0 0 11px}
+.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:0 0 10px}
+.detail-stat{background:#f6f9f2;border:1px solid #e7eee1;border-radius:12px;padding:9px;min-width:0}
+.detail-stat b{display:block;color:var(--deep);font-size:13px;line-height:1.25;overflow-wrap:anywhere}
+.detail-stat span{display:block;color:#758179;font-size:8px;line-height:1.45;margin-top:3px;overflow-wrap:anywhere}
+.detail-list{display:grid;gap:7px;margin:0;padding:0;list-style:none}
+.detail-list li{position:relative;padding-left:14px;color:#65736b;font-size:10px;line-height:1.55}
+.detail-list li:before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:#7db23c}
+.source-note{margin-top:9px;font-size:8px;line-height:1.5;color:#7a877f}
+.source-note a{color:var(--green);font-weight:800;text-decoration:underline}
+.chandra-highlight{display:flex;align-items:center;gap:8px;background:#eff8e8;border:1px solid #dcebd2;color:#2b5e2d;border-radius:12px;padding:9px 10px;margin:0 0 10px;font-size:9px;font-weight:800;line-height:1.45}
+@media(max-width:900px) and (min-width:601px){
+ .brand-name{font-size:21px}.brand-tag{font-size:10px}.header-piperine{width:56px;height:48px;flex-basis:56px;padding:3px;border-radius:14px}.header-piperine img{width:50px;height:40px}
+}
+@media(max-width:600px){
+ .plant-details summary{font-size:10px}
+ .detail-intro{font-size:10px}
+ .detail-stat b{font-size:12px}
+ .detail-list li{font-size:9px}
+ .source-note{font-size:8px}
+}
+
+
+
+/* delivery strip */
+.delivery{padding:20px 0;background:#fff}.delivery-card{position:relative;overflow:hidden;border-radius:24px;min-height:145px;background:#103d27}.delivery-card:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,47,28,.96),rgba(4,47,28,.52)),url("img/nursery-greenhouse-rows.webp") center/cover}.delivery-content{position:relative;z-index:1;color:#fff;min-height:145px;display:flex;align-items:center;justify-content:space-between;padding:22px 34px}.delivery-title{font-size:clamp(23px,3vw,38px);font-weight:800;letter-spacing:-.04em}.delivery-title em{font-style:normal;color:#e0f343}.delivery-sub{font-size:12px;color:#d3e2d6;margin-top:5px}.delivery-btn{background:#e8ed38;color:#19310f;border-radius:14px;padding:14px 21px;font-size:11px;font-weight:800}
+
+/* gallery */
+.gallery{background:#fbfaf4}.gallery-grid{display:grid;grid-template-columns:1fr 1.5fr 1fr;grid-auto-rows:200px;gap:10px}.gallery-item{overflow:hidden;border-radius:20px}.gallery-item img{height:100%;object-fit:cover;transition:.45s}.gallery-item:hover img{transform:scale(1.04)}.gallery-tall{grid-row:span 2}.gallery-wide{grid-column:span 1;grid-row:span 2}
+
+/* contact */
+.contact{background:#fff}.contact-box{background:var(--deep);border-radius:28px;padding:36px;color:#fff;display:grid;grid-template-columns:1fr .85fr;gap:35px;align-items:center}.contact h2{font-size:clamp(31px,4vw,48px);line-height:1.1;letter-spacing:-.05em;margin:12px 0}.contact h2 em{font-style:normal;color:#cfe73d}.contact p{font-size:13px;color:#c5d7ca;line-height:1.8;max-width:540px}.numbers{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:20px}.numbers small{font-size:9px;color:#a8c4af;font-weight:800;letter-spacing:.13em}.primary-number{font-size:29px;font-weight:800;margin:6px 0 15px}.numbers a{display:flex;justify-content:space-between;padding:11px 0;border-top:1px solid rgba(255,255,255,.10);font-size:12px;font-weight:700}.numbers a:first-of-type{border-top:0}
+
+/* footer */
+.footer{background:#052d1f;color:#afc1b6;padding:38px 0 22px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px}.footer h3{color:#fff;font-size:17px;margin:0 0 9px}.footer small{display:block;color:#769184;font-size:9px;letter-spacing:.14em;margin-bottom:11px}.footer a{display:block;font-size:11px;margin:8px 0}.footer p{font-size:11px;line-height:1.7;color:#879d91}.copyright{border-top:1px solid rgba(255,255,255,.08);margin-top:28px;padding-top:15px;display:flex;justify-content:space-between;font-size:9px;color:#71887c}
+
+/* mobile */
+.mobile-bar{display:none}
+.reveal{opacity:0;transform:translateY(15px);transition:.65s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){
+ .navlinks,.header-wa{display:none}.menu{display:block}.header-in{height:74px}.header-piperine{display:flex}
+ .hero-card{min-height:640px}.hero-content{width:78%;padding-left:40px}.hero-image{background-position:60% center}
+ .plant-grid{grid-template-columns:1fr 1fr}.contact-box{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+ body{padding-bottom:76px}.wrap{width:min(calc(100% - 24px),var(--max))}.topbar{font-size:9px;padding:7px 5px}.header-in{height:72px}.brand-logo{width:47px;height:47px;border-radius:14px}.brand-name{font-size:19px}.brand-tag{font-size:9px;margin-top:4px}.header-piperine{width:50px;height:44px;flex-basis:50px;margin-left:3px;margin-right:1px;padding:3px;border-radius:13px}.header-piperine img{width:44px;height:36px}.lang-switch button{padding:10px 12px}.menu{width:44px;height:44px}
+ .hero{padding-top:10px}.hero-card{min-height:690px;border-radius:23px;align-items:flex-end}.hero-card:before{background:linear-gradient(180deg,rgba(3,38,23,.05) 5%,rgba(3,38,23,.25) 32%,rgba(3,38,23,.82) 64%,rgba(3,38,23,.97) 100%)}.hero-image{background-image:url("img/pepper-vine-hand.webp");background-position:center 45%}.hero-content{width:100%;padding:38px 20px 22px}.hero h1{font-size:39px;line-height:1.08;margin:12px 0 13px}.hero-lead{font-size:13px;line-height:1.7;margin-bottom:16px}.quick-points{grid-template-columns:repeat(2,1fr);border-radius:16px;margin-bottom:9px;padding:8px}.quick{min-height:35px;font-size:9px;border-right:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16)}.quick:nth-child(2),.quick:nth-child(4){border-right:0}.quick:nth-child(3),.quick:nth-child(4){border-bottom:0}.hero-actions{grid-template-columns:1fr 1fr}.btn{min-height:51px;font-size:11px;padding:0 8px}.hero-note{font-size:9px;gap:15px;margin-top:11px}
+ .section{padding:58px 0}.section-head{margin-bottom:25px}.section-head h2{font-size:29px}.section-head p{font-size:11px;line-height:1.7}.plant-grid{grid-template-columns:1fr;gap:14px}.plant{border-radius:21px}.plant-image{height:230px}.slide-btn{width:32px;height:32px}.plant-body{padding:27px 16px 16px}.plant h3{font-size:19px;line-height:1.4}.plant p{font-size:11px;min-height:0;line-height:1.7}.plant-wa{min-height:46px}.plant-details{margin-top:12px}
+ 
+ .delivery{padding:12px 0}.delivery-card,.delivery-content{min-height:150px}.delivery-content{padding:20px;align-items:flex-end}.delivery-title{font-size:24px}.delivery-sub{font-size:9px}.delivery-btn{padding:12px 15px;font-size:9px}
+ .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:145px;gap:7px}.gallery-item{border-radius:13px}.gallery-tall{grid-row:span 2}.gallery-wide{grid-column:span 2;grid-row:span 1}
+ .contact{padding-top:58px}.contact-box{padding:22px;border-radius:23px;gap:25px}.contact h2{font-size:32px}.contact p{font-size:11px}.primary-number{font-size:26px}.numbers{padding:16px}
+ .footer-grid{grid-template-columns:1fr 1fr;gap:24px}.footer-grid>div:first-child{grid-column:1/-1}.copyright{display:block;line-height:1.8}
+ .mobile-bar{display:grid;position:fixed;left:10px;right:10px;bottom:10px;height:62px;z-index:70;grid-template-columns:1fr 1.35fr;background:rgba(255,255,255,.95);backdrop-filter:blur(18px);border:1px solid #dfe7df;border-radius:18px;box-shadow:0 15px 45px rgba(6,59,39,.20);padding:4px}.mobile-bar a{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;font-size:12px;font-weight:800}.mobile-bar a:first-child{color:var(--deep)}.mobile-bar a:last-child{background:var(--wa);color:#052d1f}.mobile-bar span{font-size:18px}
+}
+@media(max-width:380px){
+ .brand-logo{width:43px;height:43px;border-radius:13px}
+ .brand-name{font-size:17px}
+ .brand-tag{display:none!important}
+ .header-in{gap:7px}.header-piperine{width:45px;height:40px;flex-basis:45px;margin-left:2px;padding:2px;border-radius:11px}.header-piperine img{width:41px;height:34px}
+ .lang-switch{padding:3px}
+ .lang-switch button{padding:9px 9px;font-size:10px}
+ .menu{width:42px;height:42px}
+ .hero h1{font-size:35px}
+ .hero-card{min-height:675px}
+ .hero-content{padding-left:17px;padding-right:17px}
+ .section-head h2{font-size:27px}
+}
+
+@media(max-width:360px){
+  .header-in{gap:6px}
+  .brand{gap:8px}
+  .brand-logo{width:42px;height:42px}
+  .brand-name{font-size:16px}
+  .header-piperine{width:42px;height:38px;flex-basis:42px;padding:2px}
+  .header-piperine img{width:38px;height:32px}
+  .lang-switch button{padding:9px 10px}
+  .menu{width:42px;height:42px}
+}
+</style>
 </head>
-
 <body>
+<div class="topbar"><span class="lang-kn">🌱 ಗುಣಮಟ್ಟದ ಗಿಡಗಳು · ಉತ್ತಮ ತಳಿಗಳು · ಹೋಂ ಡೆಲಿವರಿ ಲಭ್ಯ</span><span class="lang-en">🌱 Quality plants · Selected varieties · Home delivery available</span></div>
 
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/919632666352" class="whatsapp-float" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-</a>
-
-<!-- HEADER -->
-<header class="navbar">
-  <div class="logo">🌱 Anya Nursery</div>
-  <nav>
-    <a href="#varieties" data-en="Varieties" data-kn="ವೈವಿಧ್ಯಗಳು">Varieties</a>
-    <a href="#about" data-en="About" data-kn="ನಮ್ಮ ಬಗ್ಗೆ">About</a>
-    <a href="#contact" data-en="Contact" data-kn="ಸಂಪರ್ಕ">Contact</a>
-    <button class="lang-btn" onclick="toggleLanguage()">ಕನ್ನಡ</button>
-  </nav>
+<header class="header">
+<div class="wrap header-in">
+<a class="brand" href="#home"><img class="brand-logo" src="img/anya-leaf.svg" alt="Anya Nursery logo"><span><span class="brand-name">Anya Nursery</span><span class="brand-tag lang-kn">ನಿಮ್ಮ ತೋಟಕ್ಕೆ, ನಿಮ್ಮ ಭವಿಷ್ಯಕ್ಕೆ</span><span class="brand-tag lang-en">For your farm, for your future</span></span></a>
+<div class="header-piperine" aria-label="Piperine brand"><img src="img/piperine-logo.png" alt="Piperine logo"></div>
+<nav class="nav">
+<div class="navlinks"><a href="#plants"><span class="lang-kn">ಗಿಡಗಳು</span><span class="lang-en">Plants</span></a><a href="#gallery"><span class="lang-kn">ಗ್ಯಾಲರಿ</span><span class="lang-en">Gallery</span></a><a href="#contact"><span class="lang-kn">ಸಂಪರ್ಕ</span><span class="lang-en">Contact</span></a></div>
+<div class="lang-switch"><button class="active" data-lang="kn">ಕನ್ನಡ</button><button data-lang="en">EN</button></div>
+<a class="header-wa" data-wa="general" href="#">WhatsApp</a><button class="menu" id="menu" aria-label="Open menu">☰</button>
+</nav>
+</div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <h1 data-en="Premium Black Pepper Plants"
-        data-kn="ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಕಪ್ಪು ಮೆಣಸು ಸಸಿಗಳು">
-      Premium Black Pepper Plants
-    </h1>
-    <p data-en="High-yield • Disease resistant • Trusted nursery"
-       data-kn="ಹೆಚ್ಚು ಉತ್ಪಾದನೆ • ರೋಗ ನಿರೋಧಕ • ವಿಶ್ವಾಸಾರ್ಹ ನರ್ಸರಿ">
-      High-yield • Disease resistant • Trusted nursery
-    </p>
-    <a href="https://wa.me/919632666352" target="_blank" class="cta">
-      WhatsApp Enquiry
-    </a>
-  </div>
+<main id="home">
+<section class="hero"><div class="wrap"><div class="hero-card">
+<div class="hero-image"></div>
+<div class="hero-content">
+<div class="eyebrow"><i></i><span class="lang-kn">ANYA NURSERY · QUALITY PLANTS</span><span class="lang-en">ANYA NURSERY · QUALITY PLANTS</span></div>
+<h1 class="lang-kn">ಉತ್ತಮ ಗಿಡಗಳಿಂದ <em>ಉತ್ತಮ ಕೃಷಿಯ ಆರಂಭ.</em></h1>
+<h1 class="lang-en">Better plants. <em>A stronger start for your farm.</em></h1>
+<p class="hero-lead lang-kn">ಧೂಪ, ಅಡಿಕೆ ಮತ್ತು IISR ಚಂದ್ರ ತಳಿಯ ಕಾಳುಮೆಣಸು ಗಿಡಗಳು ಲಭ್ಯವಿವೆ.</p>
+<p class="hero-lead lang-en">Dhoopa, Arecanut and IISR Chandra Black Pepper plants are available.</p>
+<div class="quick-points">
+<div class="quick"><b>🌱</b><span class="lang-kn">ಗುಣಮಟ್ಟದ ಗಿಡಗಳು</span><span class="lang-en">Quality plants</span></div>
+<div class="quick"><b>🚚</b><span class="lang-kn">ಹೋಂ ಡೆಲಿವರಿ</span><span class="lang-en">Home delivery</span></div>
+<div class="quick"><b>🌿</b><span class="lang-kn">ಕೃಷಿಗೆ ಸೂಕ್ತ</span><span class="lang-en">Farm focused</span></div>
+<div class="quick"><b>💬</b><span class="lang-kn">ಸುಲಭ ವಿಚಾರಣೆ</span><span class="lang-en">Easy enquiry</span></div>
+</div>
+<div class="hero-actions"><a class="btn btn-wa" data-wa="general" href="#">💬 <span class="lang-kn">WhatsApp ಮೂಲಕ ವಿಚಾರಿಸಿ</span><span class="lang-en">WhatsApp Enquiry</span></a><a class="btn btn-call" href="tel:+919535436998">☎ <span class="lang-kn">ಕರೆ ಮಾಡಿ</span><span class="lang-en">Call Now</span></a></div>
+<div class="hero-note"><span>✓ <span class="lang-kn">ಲಭ್ಯತೆ ವಿಚಾರಿಸಿ</span><span class="lang-en">Ask availability</span></span><span>✓ <span class="lang-kn">ಬೆಲೆ ವಿಚಾರಿಸಿ</span><span class="lang-en">Ask pricing</span></span></div>
+</div></div></div></section>
+
+<section class="section plants" id="plants">
+<div class="wrap"><div class="section-head"><div class="eyebrow" style="justify-content:center;color:#4f9738"><i></i><span class="lang-kn">ಲಭ್ಯವಿರುವ ಗಿಡಗಳು</span><span class="lang-en">AVAILABLE PLANTS</span></div><h2 class="lang-kn">ನಿಮ್ಮ ಕೃಷಿಗೆ <em>ಸರಿಯಾದ ಆಯ್ಕೆ.</em></h2><h2 class="lang-en">The right plants for <em>your farm.</em></h2><p class="lang-kn">ನಿಮಗೆ ಬೇಕಾದ ಗಿಡವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ಮತ್ತು WhatsApp ಮೂಲಕ ಲಭ್ಯತೆ ಹಾಗೂ ಬೆಲೆ ವಿಚಾರಿಸಿ.</p><p class="lang-en">Choose the plant you need and ask us on WhatsApp about availability and pricing.</p></div>
+<div class="plant-grid">
+<article class="plant"><div class="plant-image plant-slideshow" data-slideshow="dhoopa"><div class="plant-slides"><img class="is-active" src="img/dhoopa-pepper-plantation.webp" alt="Dhoopa Halamaddi support trees with Black Pepper vines"><img src="img/dhoopa-tree-user.webp" alt="Dhoopa Halamaddi tree at nursery"></div><button class="slide-btn slide-prev" type="button" aria-label="Previous Dhoopa image">‹</button><button class="slide-btn slide-next" type="button" aria-label="Next Dhoopa image">›</button><div class="slide-dots" aria-label="Dhoopa images"><button class="is-active" type="button" aria-label="Show Dhoopa image 1"></button><button type="button" aria-label="Show Dhoopa image 2"></button></div><span class="plant-badge">01 · DHOOPA</span><span class="plant-icon">🌱</span></div><div class="plant-body"><div class="plant-kicker"><span class="lang-kn">ಆಧಾರ ಗಿಡ</span><span class="lang-en">SUPPORT TREE</span></div><h3 class="lang-kn">ಧೂಪ (ಹಾಲುಮಡ್ಡಿ) ಗಿಡಗಳು</h3><h3 class="lang-en">Dhoopa (Halamaddi) Plants</h3><p class="lang-kn">ಕರಿಮೆಣಸು ಬೆಳೆಗೆ ಅತ್ಯುತ್ತಮ ಆಧಾರ ಗಿಡ.</p><p class="lang-en">An excellent support tree for Black Pepper cultivation.</p>
+<details class="plant-details"><summary><span class="lang-kn">ಧೂಪದ ಸಂಪೂರ್ಣ ವಿವರ</span><span class="lang-en">Dhoopa details</span></summary><div class="plant-detail-body">
+<div class="detail-grid">
+<div class="detail-stat"><b>~10 ಅಡಿ</b><span class="lang-kn">ವರ್ಷದ ಬೆಳವಣಿಗೆ</span><span class="lang-en">Growth per year</span></div>
+<div class="detail-stat"><b>ಕಡಿಮೆ ನೀರು</b><span class="lang-kn">ಕಡಿಮೆ ನೀರಿನ ಪ್ರದೇಶಗಳಿಗೆ ಸೂಕ್ತ</span><span class="lang-en">Suitable for low-water areas</span></div>
+</div>
+<ul class="detail-list">
+<li class="lang-kn">ಕರಿಮೆಣಸು ಬೆಳೆಗೆ ಅತ್ಯುತ್ತಮ ಆಧಾರ ಗಿಡ.</li><li class="lang-en">Excellent support tree for Black Pepper cultivation.</li>
+<li class="lang-kn">ವರ್ಷಕ್ಕೆ ಸುಮಾರು 10 ಅಡಿ ಬೆಳೆಯುತ್ತದೆ.</li><li class="lang-en">Grows approximately 10 feet per year.</li>
+<li class="lang-kn">ಬೆಳೆಯಲು ಕಡಿಮೆ ನೀರು ಸಾಕಾಗುತ್ತದೆ.</li><li class="lang-en">Requires less water to grow.</li>
+<li class="lang-kn">ಕಡಿಮೆ ನೀರಿನ ಪ್ರದೇಶಗಳಿಗೆ ಸೂಕ್ತ.</li><li class="lang-en">Suitable for low-water regions.</li>
+<li class="lang-kn">ಮರ ಬೇಗ ದಪ್ಪವಾಗುತ್ತದೆ.</li><li class="lang-en">The trunk grows thick quickly.</li>
+<li class="lang-kn">ಶೀಘ್ರದಲ್ಲೇ ಧೂಪವನ್ನು ಸಂಗ್ರಹಿಸಬಹುದು.</li><li class="lang-en">Dhoopa can be harvested early.</li>
+</ul>
+<div class="source-note lang-kn">ನರ್ಸರಿ ನೀಡಿದ ಮಾಹಿತಿಯ ಆಧಾರ.</div><div class="source-note lang-en">Based on nursery-provided product information.</div>
+</div></details>
+<a class="plant-wa" data-wa="dhoopa" href="#">💬 <span class="lang-kn">WhatsApp ಮೂಲಕ ವಿಚಾರಿಸಿ</span><span class="lang-en">WhatsApp Enquiry</span></a></div></article>
+
+<article class="plant"><div class="plant-image plant-slideshow" data-slideshow="chandra"><div class="plant-slides"><img class="is-active" src="img/iisr-chandra-greenhouse.webp" alt="IISR Chandra Black Pepper nursery plants"><img src="img/pepper-vine-hand.webp" alt="Black pepper vine with green pepper spikes"></div><button class="slide-btn slide-prev" type="button" aria-label="Previous IISR Chandra image">‹</button><button class="slide-btn slide-next" type="button" aria-label="Next IISR Chandra image">›</button><div class="slide-dots" aria-label="IISR Chandra images"><button class="is-active" type="button" aria-label="Show IISR Chandra image 1"></button><button type="button" aria-label="Show IISR Chandra image 2"></button></div><span class="plant-badge">02 · IISR CHANDRA</span><span class="plant-icon">🌿</span></div><div class="plant-body"><div class="plant-kicker"><span class="lang-kn">ಕಾಳುಮೆಣಸು · IISR</span><span class="lang-en">BLACK PEPPER · IISR</span></div><h3 class="lang-kn">IISR ಚಂದ್ರ ತಳಿಯ ಕಾಳುಮೆಣಸು ಗಿಡಗಳು</h3><h3 class="lang-en">IISR Chandra Black Pepper Plants</h3><p class="lang-kn">ಆರಂಭದಲ್ಲೇ ಪಕ್ವವಾಗುವ, ಹೆಚ್ಚು ಫಲ ನೀಡುವ ಹೈಬ್ರಿಡ್ ತಳಿ.</p><p class="lang-en">An early-maturing, high-yielding hybrid variety.</p>
+<div class="chandra-highlight">⭐ <span class="lang-kn">7.5 ಕೆ.ಜಿ. ಹಸಿರು ಮೆಣಸು / ಬಳ್ಳಿ · 17.5 ಸೆಂ.ಮೀ. ಸ್ಪೈಕ್</span><span class="lang-en">7.5 kg green pepper / vine · 17.5 cm spike</span></div>
+<details class="plant-details"><summary><span class="lang-kn">IISR ಚಂದ್ರದ ಸಂಪೂರ್ಣ ವಿವರ</span><span class="lang-en">IISR Chandra details</span></summary><div class="plant-detail-body">
+<div class="detail-grid"><div class="detail-stat"><b>7.5 kg</b><span class="lang-kn">ಹಸಿರು ಮೆಣಸು / ಬಳ್ಳಿ</span><span class="lang-en">Green pepper / vine</span></div><div class="detail-stat"><b>17.5 cm</b><span class="lang-kn">ಸ್ಪೈಕ್ ಉದ್ದ</span><span class="lang-en">Spike length</span></div><div class="detail-stat"><b>90%</b><span class="lang-kn">ಹಣ್ಣಿನ ಸೆಟ್</span><span class="lang-en">Fruit set</span></div><div class="detail-stat"><b>33.5%</b><span class="lang-kn">ಡ್ರೈ ರಿಕವರಿ</span><span class="lang-en">Dry recovery</span></div></div>
+<ul class="detail-list">
+<li class="lang-kn">2023ರಲ್ಲಿ ICAR–Indian Institute of Spices Research (IISR) ಅಭಿವೃದ್ಧಿಪಡಿಸಿ ಬಿಡುಗಡೆ ಮಾಡಿದ ಹೈಬ್ರಿಡ್ ತಳಿ.</li><li class="lang-en">A hybrid variety developed and released by ICAR–Indian Institute of Spices Research (IISR) in 2023.</li>
+<li class="lang-kn">Pedigree: HP 1117 × Thommankodi; HP 1117 ಎಂಬುದು Cholamundi × Thommankodi F1.</li><li class="lang-en">Pedigree: HP 1117 × Thommankodi; HP 1117 is an F1 of Cholamundi × Thommankodi.</li>
+<li class="lang-kn">85–90 ಹಣ್ಣುಗಳು ಪ್ರತಿ ಸ್ಪೈಕ್‌ಗೆ, ಬೋಲ್ಡ್ ಬೆರಿಗಳು ಮತ್ತು ಉದ್ದವಾದ ಸ್ಪೈಕ್‌ಗಳು.</li><li class="lang-en">About 85–90 fruits per spike, with bold berries and long spikes.</li>
+<li class="lang-kn">ಎಲ್ಲಾ ಕೇರಳದ ಮತ್ತು ದಕ್ಷಿಣ ಕರ್ನಾಟಕದ ಕಾಳುಮೆಣಸು ಬೆಳೆಯುವ ಪ್ರದೇಶಗಳಿಗೆ ಅಳವಡಿಕೆ.</li><li class="lang-en">Adopted across pepper-growing tracts of Kerala and southern Karnataka.</li>
+<li class="lang-kn">Piperine 5.1%, Oleoresin 8.71%, Essential oil 3.2%.</li><li class="lang-en">Piperine 5.1%, oleoresin 8.71%, and essential oil 3.2%.</li>
+</ul>
+
+</div></details>
+<a class="plant-wa" data-wa="pepper" href="#">💬 <span class="lang-kn">WhatsApp ಮೂಲಕ ವಿಚಾರಿಸಿ</span><span class="lang-en">WhatsApp Enquiry</span></a></div></article>
+
+<article class="plant"><div class="plant-image plant-slideshow" data-slideshow="arecanut"><div class="plant-slides"><img class="is-active" src="img/arecanut-clusters-1.webp" alt="Arecanut crop clusters"><img src="img/arecanut-clusters-2.webp" alt="Arecanut fruit clusters on palm"><img src="img/arecanut-nursery-rows.webp" alt="Rows of arecanut nursery plants"></div><button class="slide-btn slide-prev" type="button" aria-label="Previous Arecanut image">‹</button><button class="slide-btn slide-next" type="button" aria-label="Next Arecanut image">›</button><div class="slide-dots" aria-label="Arecanut images"><button class="is-active" type="button" aria-label="Show Arecanut image 1"></button><button type="button" aria-label="Show Arecanut image 2"></button><button type="button" aria-label="Show Arecanut image 3"></button></div><span class="plant-badge">03 · ARECANUT</span><span class="plant-icon">🌴</span></div><div class="plant-body"><div class="plant-kicker"><span class="lang-kn">ಅಡಿಕೆ</span><span class="lang-en">ARECANUT</span></div><h3 class="lang-kn">ಎಲ್ಲಾ ತಳಿಯ ಅಡಿಕೆ ಗಿಡಗಳು</h3><h3 class="lang-en">All Varieties of Arecanut Plants</h3><p class="lang-kn">ವಿವಿಧ ತಳಿಯ ಅಡಿಕೆ ಗಿಡಗಳು ಲಭ್ಯವಿವೆ.</p><p class="lang-en">Different varieties of Arecanut plants are available.</p>
+<details class="plant-details"><summary><span class="lang-kn">ಅಡಿಕೆ ಗಿಡಗಳ ವಿವರ</span><span class="lang-en">Arecanut details</span></summary><div class="plant-detail-body">
+<div class="detail-grid"><div class="detail-stat"><b>ವಿವಿಧ ತಳಿಗಳು</b><span class="lang-kn">ಲಭ್ಯತೆಗೆ ವಿಚಾರಿಸಿ</span><span class="lang-en">Ask for current availability</span></div><div class="detail-stat"><b>Home Delivery</b><span class="lang-kn">ಡೆಲಿವರಿ ವಿವರಗಳಿಗೆ ಸಂಪರ್ಕಿಸಿ</span><span class="lang-en">Ask for delivery details</span></div></div>
+<ul class="detail-list"><li class="lang-kn">ನಿಮಗೆ ಬೇಕಾದ ತಳಿಯ ಲಭ್ಯತೆಗಾಗಿ WhatsApp ಮೂಲಕ ವಿಚಾರಿಸಿ.</li><li class="lang-en">Message us on WhatsApp to check the variety you need.</li><li class="lang-kn">ಬೆಲೆ, ಲಭ್ಯತೆ ಮತ್ತು ಹೋಂ ಡೆಲಿವರಿ ವಿವರಗಳನ್ನು ನೇರವಾಗಿ ಪಡೆಯಿರಿ.</li><li class="lang-en">Get pricing, availability and home delivery details directly.</li></ul>
+<div class="source-note lang-kn">ಲಭ್ಯವಿರುವ ತಳಿಗಳು ಋತು ಮತ್ತು ಸ್ಟಾಕ್ ಆಧಾರಿತವಾಗಿರಬಹುದು.</div><div class="source-note lang-en">Available varieties may depend on season and stock.</div>
+</div></details>
+<a class="plant-wa" data-wa="arecanut" href="#">💬 <span class="lang-kn">WhatsApp ಮೂಲಕ ವಿಚಾರಿಸಿ</span><span class="lang-en">WhatsApp Enquiry</span></a></div></article>
+</div></div>
 </section>
 
-<!-- VARIETIES -->
-<section id="varieties" class="section">
-  <h2 data-en="🌶 Black Pepper Varieties"
-      data-kn="🌶 ಕಪ್ಪು ಮೆಣಸು ವೈವಿಧ್ಯಗಳು">
-    🌶 Black Pepper Varieties
-  </h2>
+<section class="delivery"><div class="wrap"><div class="delivery-card"><div class="delivery-content"><div><div class="delivery-title">🚚 <span class="lang-kn">ಹೋಂ ಡೆಲಿವರಿ <em>ಲಭ್ಯ!</em></span><span class="lang-en">Home delivery <em>available!</em></span></div><div class="delivery-sub lang-kn">ನಿಮ್ಮ ಮನೆ ಬಾಗಿಲಿಗೆ ಗಿಡಗಳ ಡೆಲಿವರಿ ಕುರಿತು ವಿಚಾರಿಸಿ.</div><div class="delivery-sub lang-en">Ask us about plant delivery to your location.</div></div><a class="delivery-btn" data-wa="general" href="#">💬 <span class="lang-kn">ವಿಚಾರಿಸಿ</span><span class="lang-en">Enquire</span></a></div></div></div></section>
 
-  <div class="cards">
+<section class="section gallery" id="gallery"><div class="wrap"><div class="section-head"><div class="eyebrow" style="justify-content:center;color:#4f9738"><i></i><span class="lang-kn">ನಮ್ಮ ನರ್ಸರಿಯಿಂದ</span><span class="lang-en">FROM OUR NURSERY</span></div><h2 class="lang-kn">ಗಿಡಗಳನ್ನು <em>ಒಂದು ನೋಟದಲ್ಲಿ.</em></h2><h2 class="lang-en">A glimpse of <em>what we grow.</em></h2></div>
+<div class="gallery-grid"><figure class="gallery-item gallery-tall"><img src="img/sapling-in-hand.webp" alt="Healthy nursery sapling"></figure><figure class="gallery-item gallery-wide"><img src="img/iisr-chandra-greenhouse.webp" alt="IISR Chandra nursery plants"></figure><figure class="gallery-item"><img src="img/arecanut-nursery-rows.webp" alt="Arecanut nursery rows"></figure><figure class="gallery-item"><img src="img/pepper-clusters.webp" alt="Black pepper clusters"></figure><figure class="gallery-item"><img src="img/arecanut-clusters-2.webp" alt="Arecanut clusters"></figure><figure class="gallery-item"><img src="img/pepper-vine-hand.webp" alt="Black pepper vine"></figure></div></div></section>
 
-    <!-- CARD -->
-    <div class="card">
-      <img src="images/pepper1.jpg" alt="Panniyur-1">
-      <h3>Panniyur-1</h3>
-      <p data-en="High yielding commercial variety"
-         data-kn="ಹೆಚ್ಚು ಉತ್ಪಾದನೆಯ ವಾಣಿಜ್ಯ ತಳಿ">
-        High yielding commercial variety
-      </p>
-      <a class="btn" onclick="orderNow('Panniyur-1')">Order on WhatsApp</a>
-    </div>
+<section class="section contact" id="contact"><div class="wrap"><div class="contact-box"><div><div class="eyebrow"><i></i><span class="lang-kn">ಸಂಪರ್ಕಿಸಿ</span><span class="lang-en">GET IN TOUCH</span></div><h2 class="lang-kn">ನಿಮಗೆ ಬೇಕಾದ ಗಿಡದ ಬಗ್ಗೆ <em>ವಿಚಾರಿಸಿ.</em></h2><h2 class="lang-en">Ask us about the <em>plants you need.</em></h2><p class="lang-kn">ಲಭ್ಯತೆ, ಬೆಲೆ ಮತ್ತು ಹೋಂ ಡೆಲಿವರಿ ಕುರಿತು WhatsApp ಮೂಲಕ ನೇರವಾಗಿ ವಿಚಾರಿಸಿ.</p><p class="lang-en">Ask directly on WhatsApp about availability, pricing and home delivery.</p><a class="btn btn-wa" style="max-width:260px" data-wa="general" href="#">💬 <span class="lang-kn">WhatsApp ಮೂಲಕ ವಿಚಾರಿಸಿ</span><span class="lang-en">WhatsApp Enquiry</span></a></div>
+<div class="numbers"><small><span class="lang-kn">WHATSAPP</span><span class="lang-en">WHATSAPP</span></small><div class="primary-number">9535436998</div><a data-wa="general" href="#"><span>💬 WhatsApp</span><span>↗</span></a><small style="margin-top:18px"><span class="lang-kn">ಪರ್ಯಾಯ ಕರೆ ಸಂಖ್ಯೆಗಳು</span><span class="lang-en">ALTERNATIVE CALL NUMBERS</span></small><a href="tel:+919632666352"><span>9632666352</span><span>↗</span></a><a href="tel:+919945705674"><span>9945705674</span><span>↗</span></a></div>
+</div></div></section>
+</main>
 
-    <div class="card">
-      <img src="images/pepper2.jpg" alt="Karimunda">
-      <h3>Karimunda</h3>
-      <p data-en="Traditional variety with strong aroma"
-         data-kn="ಪಾರಂಪರಿಕ ಮತ್ತು ಘಮಣಯುಕ್ತ ತಳಿ">
-        Traditional variety with strong aroma
-      </p>
-      <a class="btn" onclick="orderNow('Karimunda')">Order on WhatsApp</a>
-    </div>
+<footer class="footer"><div class="wrap footer-grid"><div><h3>Anya Nursery</h3><p class="lang-kn">ನಿಮ್ಮ ತೋಟಕ್ಕೆ, ನಿಮ್ಮ ಭವಿಷ್ಯಕ್ಕೆ — ಗುಣಮಟ್ಟದ ನರ್ಸರಿ ಗಿಡಗಳು.</p><p class="lang-en">Quality nursery plants for your farm and future.</p></div><div><small>EXPLORE</small><a href="#plants"><span class="lang-kn">ಗಿಡಗಳು</span><span class="lang-en">Plants</span></a><a href="#plants"><span class="lang-kn">ಗಿಡಗಳ ವಿವರ</span><span class="lang-en">Plant details</span></a><a href="#gallery"><span class="lang-kn">ಗ್ಯಾಲರಿ</span><span class="lang-en">Gallery</span></a></div><div><small>CONTACT</small><a href="tel:+919535436998">9535436998</a><a href="tel:+919632666352">9632666352</a><a href="tel:+919945705674">9945705674</a></div></div><div class="wrap copyright"><span>© 2026 Anya Nursery</span><span class="lang-kn">ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.</span><span class="lang-en">All rights reserved.</span></div></footer>
 
-    <div class="card">
-      <img src="images/pepper3.jpg" alt="Sreekara">
-      <h3>Sreekara</h3>
-      <p data-en="Early bearing high yield variety"
-         data-kn="ತ್ವರಿತ ಫಲ ನೀಡುವ ತಳಿ">
-        Early bearing high yield variety
-      </p>
-      <a class="btn" onclick="orderNow('Sreekara')">Order on WhatsApp</a>
-    </div>
+<div class="mobile-bar"><a href="tel:+919535436998">☎ <span class="lang-kn">ಕರೆ ಮಾಡಿ</span><span class="lang-en">Call</span></a><a data-wa="general" href="#">💬 <span class="lang-kn">WhatsApp</span><span class="lang-en">WhatsApp</span></a></div>
 
-  </div>
-</section>
+<script>
+const messages={
+ kn:{
+  general:"ನಮಸ್ಕಾರ, Anya Nursery ಗಿಡಗಳ ಬಗ್ಗೆ ವಿಚಾರಿಸಲು ಸಂಪರ್ಕಿಸುತ್ತಿದ್ದೇನೆ. ಲಭ್ಯತೆ, ಬೆಲೆ ಮತ್ತು ಹೋಂ ಡೆಲಿವರಿ ವಿವರಗಳನ್ನು ತಿಳಿಸಿ.",
+  dhoopa:"ನಮಸ್ಕಾರ, ಧೂಪ (ಹಾಲುಮಡ್ಡಿ) ಗಿಡಗಳ ಬಗ್ಗೆ ವಿಚಾರಿಸಲು ಸಂಪರ್ಕಿಸುತ್ತಿದ್ದೇನೆ. ಲಭ್ಯತೆ, ಬೆಲೆ ಮತ್ತು ಹೋಂ ಡೆಲಿವರಿ ವಿವರಗಳನ್ನು ತಿಳಿಸಿ.",
+  arecanut:"ನಮಸ್ಕಾರ, ಅಡಿಕೆ ಗಿಡಗಳ ಬಗ್ಗೆ ವಿಚಾರಿಸಲು ಸಂಪರ್ಕಿಸುತ್ತಿದ್ದೇನೆ. ಲಭ್ಯವಿರುವ ತಳಿಗಳು, ಬೆಲೆ ಮತ್ತು ಹೋಂ ಡೆಲಿವರಿ ವಿವರಗಳನ್ನು ತಿಳಿಸಿ.",
+  pepper:"ನಮಸ್ಕಾರ, IISR ಚಂದ್ರ ತಳಿಯ ಕಾಳುಮೆಣಸು ಗಿಡಗಳ ಬಗ್ಗೆ ವಿಚಾರಿಸಲು ಸಂಪರ್ಕಿಸುತ್ತಿದ್ದೇನೆ. ಲಭ್ಯತೆ, ಬೆಲೆ ಮತ್ತು ಹೋಂ ಡೆಲಿವರಿ ವಿವರಗಳನ್ನು ತಿಳಿಸಿ."
+ },
+ en:{
+  general:"Hello, I am interested in Anya Nursery plants. Please share availability, pricing and home delivery details.",
+  dhoopa:"Hello, I am interested in Dhoopa (Halamaddi) plants. Please share availability, pricing and home delivery details.",
+  arecanut:"Hello, I am interested in Arecanut plants. Please share available varieties, pricing and home delivery details.",
+  pepper:"Hello, I am interested in IISR Chandra Black Pepper plants. Please share availability, pricing and home delivery details."
+ }
+};
+function setLang(lang){
+ document.documentElement.dataset.lang=lang;
+ document.querySelectorAll(".lang-switch button").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
+ localStorage.setItem("anya-lang",lang); updateWA();
+}
+function updateWA(){
+ const lang=document.documentElement.dataset.lang;
+ document.querySelectorAll("[data-wa]").forEach(a=>{
+  const type=a.dataset.wa||"general";
+  a.href="https://wa.me/919535436998?text="+encodeURIComponent(messages[lang][type]);
+ });
+}
+document.querySelectorAll(".lang-switch button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+setLang(localStorage.getItem("anya-lang")||"kn");
 
-<!-- ABOUT -->
-<section id="about" class="section about">
-  <h2 data-en="🌿 About Anya Nursery"
-      data-kn="🌿 ಅನ್ಯಾ ನರ್ಸರಿ ಬಗ್ಗೆ">
-    🌿 About Anya Nursery
-  </h2>
-  <p data-en="We grow healthy pepper plants using scientific nursery methods."
-     data-kn="ನಾವು ವೈಜ್ಞಾನಿಕ ವಿಧಾನದಲ್ಲಿ ಆರೋಗ್ಯಕರ ಮೆಣಸು ಸಸಿಗಳನ್ನು ಬೆಳೆಸುತ್ತೇವೆ.">
-    We grow healthy pepper plants using scientific nursery methods.
-  </p>
-</section>
+const menu=document.getElementById("menu");
+menu.addEventListener("click",()=>{
+ document.body.classList.toggle("open-menu");
+});
+document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",()=>document.body.classList.remove("open-menu")));
 
-<!-- LOCATION -->
-<section class="section">
-  <h2 data-en="📍 Our Location"
-      data-kn="📍 ನಮ್ಮ ಸ್ಥಳ">
-    📍 Our Location
-  </h2>
+document.querySelectorAll(".plant-slideshow").forEach(slide=>{
+ const images=[...slide.querySelectorAll(".plant-slides img")];
+ const dots=[...slide.querySelectorAll(".slide-dots button")];
+ let index=0,timer;
+ const show=i=>{index=(i+images.length)%images.length;images.forEach((img,n)=>img.classList.toggle("is-active",n===index));dots.forEach((dot,n)=>dot.classList.toggle("is-active",n===index));};
+ const start=()=>{if(images.length>1){clearInterval(timer);timer=setInterval(()=>show(index+1),4500)}};
+ const stop=()=>clearInterval(timer);
+ slide.querySelector(".slide-prev")?.addEventListener("click",()=>{show(index-1);start()});
+ slide.querySelector(".slide-next")?.addEventListener("click",()=>{show(index+1);start()});
+ dots.forEach((dot,n)=>dot.addEventListener("click",()=>{show(n);start()}));
+ slide.addEventListener("mouseenter",stop);slide.addEventListener("mouseleave",start);slide.addEventListener("focusin",stop);slide.addEventListener("focusout",e=>{if(!slide.contains(e.relatedTarget))start()});
+ let startX=0;
+ slide.addEventListener("touchstart",e=>{startX=e.changedTouches[0].clientX;stop()},{passive:true});
+ slide.addEventListener("touchend",e=>{const dx=e.changedTouches[0].clientX-startX;if(Math.abs(dx)>35)show(index+(dx<0?1:-1));start()},{passive:true});
+ start();
+});
 
-  <div class="map-box">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3892.4228041652846!2d75.54744907507165!3d12.685803987603885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDQxJzA4LjkiTiA3NcKwMzMnMDAuMSJF!5e0!3m2!1sen!2sin!4v1771136883785!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section contact">
-  <h2>📞 Contact</h2>
-  <a href="https://wa.me/919632666352" target="_blank" class="cta">
-    Chat on WhatsApp
-  </a>
-</section>
-
-<footer>
-  © 2026 Anya Nursery
-</footer>
-
-<script src="script.js"></script>
+const obs=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")});
+},{threshold:.08});
+document.querySelectorAll(".plant,.gallery-item,.contact-box,.delivery-card").forEach(el=>{
+ el.classList.add("reveal");obs.observe(el);
+});
+</script>
+<style>
+@media(max-width:900px){
+ .open-menu .navlinks{display:flex;position:fixed;left:12px;right:12px;top:78px;z-index:60;flex-direction:column;background:#fffefb;padding:14px;border-radius:20px;box-shadow:0 20px 50px rgba(6,59,39,.18);gap:2px}
+ .open-menu .navlinks a{padding:13px 14px;border-radius:11px}
+}
+</style>
 </body>
 </html>
